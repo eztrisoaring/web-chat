@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"webchat-cae96","appId":"1:436698773813:web:6cba3948a78806332fb47c","storageBucket":"webchat-cae96.appspot.com","locationId":"asia-east1","apiKey":"AIzaSyDXx6ZQct8qwYcbK_pGlEBwRgm_7hdsxq4","authDomain":"webchat-cae96.firebaseapp.com","messagingSenderId":"436698773813"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
